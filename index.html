@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container time-block">
+      <!-- Timeblocks go here -->
+      <div class="row" id="nine-am">
+        <div class="col-md-2"><span>09:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="9" placeholder="09:00 Tasks" />
+        </div>
+        <div class="col-md-2 ">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="ten-am">
+        <div class="col-md-2"><span>10:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="10" placeholder="10:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="eleven-am">
+        <div class="col-md-2"><span>11:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="11" placeholder="11:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="twelve-pm">
+        <div class="col-md-2"><span>12:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="12" placeholder="12:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="one-pm">
+        <div class="col-md-2"><span>13:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="13" placeholder="13:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="two-pm">
+        <div class="col-md-2"><span>14:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="14" placeholder="14:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="three-pm">
+        <div class="col-md-2"><span>15:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="15" placeholder="15:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="four-pm">
+        <div class="col-md-2"><span>16:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="16" placeholder="16:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="five-pm">
+        <div class="col-md-2"><span>17:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="17" placeholder="17:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <!--trash icon-->
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="six-pm">
+        <div class="col-md-2"><span>18:00</span></div>
+        <div class="col-md-8 to-do-box">
+          <input type="text" class="to-do-text form-control" id="18" placeholder="18:00 Tasks" />
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary saveBtn">
+            <span>hello I'm a btn</span>
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
