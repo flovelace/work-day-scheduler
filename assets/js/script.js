@@ -11,7 +11,7 @@ todaysDate.textContent = currentTime.format("dddd, MMMM Do, YYYY");
 var thisHour = moment().format("HH");
 
 //variable for save button
-var saveButton = document.querySelector("#save-button");
+var saveButton = document.querySelector(".saveBtn");
 
 //
 var userTextInput = document.querySelectorAll("textarea");
@@ -32,12 +32,15 @@ saveButton.addEventListener('click', function(event) {
     console.log(saveButton, "hello");
     event.preventDefault();
 
-    var userInput = localStorage.getItem("textarea");
+    var userTasks = {
+        task: document.getElementsByClassName("description").value,
+    }
+
+    var userInput = localStorage.getItem("userTasks");
     userInput = JSON.parse(userInput);
-    userInput.push(userTextInput)
+    userInput.push(userTasks);
 
-
-
+    localStorage.setItem('userTasks', JSON.stringify(userInput));
 });
 
 
