@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link href="./assets/css/style.css" rel="stylesheet">
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,124 +28,106 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container time-block">
+    <div class="container">
+
       <!-- Timeblocks go here -->
-      <div class="row" id="nine-am">
-        <div class="col-md-2"><span>09:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2 ">
+
+      <div class="row time-block">
+        <div class="col-lg-1 hour">9am</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="ten-am">
-        <div class="col-md-2"><span>10:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">10am</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="eleven-am">
-        <div class="col-md-2"><span>11:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">11am</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="twelve-pm">
-        <div class="col-md-2"><span>12:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">12pm</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="one-pm">
-        <div class="col-md-2"><span>13:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">1pm</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="two-pm">
-        <div class="col-md-2"><span>14:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">2pm</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="three-pm">
-        <div class="col-md-2"><span>15:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">3pm</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="four-pm">
-        <div class="col-md-2"><span>16:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">4pm</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="five-pm">
-        <div class="col-md-2"><span>17:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">5pm</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <!--trash icon-->
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
 
-      <div class="row" id="six-pm">
-        <div class="col-md-2"><span>18:00</span></div>
-        <div class="col-md-8 to-do-box">
-          <textarea class ="col-md-10 task-description"></textarea>
-        </div>
-        <div class="col-md-2">
+      <div class="row time-block">
+        <div class="col-lg-1 hour">6pm</div>       
+          <textarea class =" description col-lg-10"></textarea>        
+        <div class="col-lg-1">
           <button type="button" class="btn btn-primary saveBtn">
-            <span>hello I'm a btn</span>
+            <i class="fas fa-save"></i>
           </button>
         </div>
       </div>
