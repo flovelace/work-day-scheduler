@@ -2,6 +2,11 @@
 const today = moment();
 console.log(today.format());
 
+// Initalize a DATABASE using Local Storage
+if(localStorage.getItem("9am") == "") {
+    localStorage.setItem("9am", "");
+}
+
 //sets the current day and date in the header
 const todaysDate = document.querySelector("#currentDay");
 var currentTime = moment();
@@ -25,22 +30,29 @@ for(i=0; i< userTextInput.length; i++) {
     } else {
         userTextInput[i].setAttribute("class", "col-lg-10 future")
     }
+
+
     
 }
 
 saveButton.addEventListener('click', function(event) {
-    console.log(saveButton, "hello");
     event.preventDefault();
+    console.log(saveButton, "hello");
 
     var userTasks = {
-        task: document.getElementsByClassName("description").value,
+       // task: document.getElementsByClassName("description").val()
+       task: document.getElementById("9am").value
     }
 
-    var userInput = localStorage.getItem("userTasks");
-    userInput = JSON.parse(userInput);
-    userInput.push(userTasks);
+    console.log(userTasks);
 
-    localStorage.setItem('userTasks', JSON.stringify(userInput));
+    var userInput = localStorage.getItem("9am");
+    console.log(userInput);
+ //   var JSONInput = JSON.parse(userInput);
+ //   console.log(JSONInput);
+ //   JSONInput.push(userTasks);
+
+    localStorage.setItem('9am', JSON.stringify(userTasks.task));
 });
 
 
